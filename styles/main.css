@@ -314,11 +314,12 @@ content: '⬇';
 form .input-group label {
     display: block;
 }
+form .input-group textarea,
 form .input-group input {
     margin-bottom: 15px;
     font-family: 'Courier New';
-    line-height: 30px;
-    font-size: 30px;
+    line-height: 20px;
+    font-size: 20px;
 }
 
 
@@ -331,27 +332,10 @@ form input[type="submit"]{
 form .buttons {
     margin-top: 30px;
 }
-form input[type="reset"]{
-    width: 150px;
-    font-size: 25px;
-    border: 1px solid gray;
-    color: gray;
-}
-form input[type="tel"],
 form input[type="email"],
-form input[type="text"]{
+form input[type="text"],
+form textarea{
     width: calc(100% - 20px);
-}
-@media screen and (min-width :760px){
-    form #email,
-    form #firstName,
-    form #lastName{
-        width: 600px;
-    }
-    form #company,
-    form #contact{
-        width: 400px;
-    }
 }
 
 /**
