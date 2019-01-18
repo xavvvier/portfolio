@@ -279,9 +279,6 @@ input[type=checkbox]{
     padding-left: 20px;
     color: #FFF;
 }
-/*.show-menu:before {
-content: '⬇';
-}*/
 .menu ul.sub-menu{
     position: relative;
     margin-left: -3px;
