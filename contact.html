@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javier's portfolio</title>
+        <link rel="stylesheet" href="styles/main.css"/>
+    </head>
+    <body>
+        <nav>
+            <form action="#" method="post" autocomplete="off">
+                <input type="checkbox" id="menuVisible" role="button">
+                <div>
+                    <label class="show-menu" for="menuVisible">
+                        <span class="indicator">&nbsp;</span>Menu
+                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                                Home<span class="diamond">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resume.html">
+                                Resume<span class="diamond">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="certifications.html">
+                                Certifications<span class="diamond">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Projects<span class="diamond">&nbsp;</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="sos.html">
+                                        SOS<span class="diamond">&nbsp;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jiralogs.html">
+                                        JiraLogs<span class="diamond">&nbsp;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ng-pickaday.html">
+                                        ng-pickaday<span class="diamond">&nbsp;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="contact.html">
+                                Say hello<span class="diamond">&nbsp;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </nav>
+        <main>
+        <h3>Javier Gonzalez V</h3>
+        <p class="sub-title instruction line-15 typewriter-15">## Say hello ##</p>
+        <form action="http://matt.nscctruro.ca/handler.php" method="post">
+            <div class="input-group">
+                <label for="firstName">First name:</label>
+                <input type="text" name="firstName" id="firstName" maxlength="50" required>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last name:</label>
+                <input type="text" name="lastName" id="lastName" maxlength="50" required>
+            </div>
+            <div class="input-group">
+                <label for="company">Company:</label>
+                <input type="text" name="company" id="company" maxlength="50">
+            </div>
+            <div class="input-group">
+                <label for="contact">Contact phone number:</label>
+                <input type="tel" name="contact" id="contact" maxlength="20">
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="50" required>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        </main>
+    </body>
+</html>
