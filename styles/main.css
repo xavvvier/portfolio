@@ -435,3 +435,17 @@ form input[type="text"]{
     from{width: 0;}
     to{width: 12em;}
 }
+
+/* Based on: https://codepen.io/chriscoyier/pen/bGyoz*/
+.social-links svg:hover{
+   stroke: #2a96d7; 
+   stroke-dasharray: 1000;
+   stroke-dashoffset: 1000;
+   animation: dashoffset 2s linear forwards;
+}
+
+@keyframes dashoffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
