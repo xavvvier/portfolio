@@ -112,9 +112,9 @@ ul {
 .certifications {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
 }
 .certifications section {
     grid-column: span 1;
@@ -155,15 +155,6 @@ ul {
 @media screen and (min-width :760px){
     main {
         margin: 60px;
-    }
-    .certifications {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-@media screen and (min-width :1200px){
-    .certifications {
-        grid-template-columns: repeat(3, 1fr);
     }
 
 }
