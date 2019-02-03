@@ -144,14 +144,10 @@ ul {
     box-shadow: 1px 1px 5px;
     border-radius: 3px;
     text-align: center;
-}
-
-.content iframe{
+    max-width: 100%;
+    width: 600px;
     margin: 10px auto;
     display: block;
-}
-.content.sos{
-    min-width: 650px;
 }
 @media screen and (min-width :760px){
     main {
