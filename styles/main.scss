@@ -1,0 +1,460 @@
+$bg-color: #fdf5e0;
+$fg-color: #5a707a;
+$hover-color: #2a96d7;
+$active-color: #859900;
+$bg-menu-color: #2f3036;
+$fg-menu-color: #ffffff;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier new';
+    font-size: 18px;
+    color: $fg-color;
+    background-color: $bg-color;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    margin-left: 0px;
+    z-index: 10;
+}
+main{
+    margin: 30px 10px;
+    padding-top: 1px;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.landing{
+    text-align: justify;
+}
+.landing-image{
+    width: 60%; 
+    float: right; 
+    shape-outside: polygon(74% 0%, 67% 9%, 72% 13%, 45% 16%, 1% 61%, 100% 98%, 100% 0%);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.social-links a,
+.social-links a:hover{
+    text-decoration: none;
+}
+/* resume layout */
+.job, .study {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.year {
+    color: #22988f;
+    float: left;
+}
+
+.company {
+    color: #b38b21;
+}
+
+
+.city {
+    color: #2681cd;
+}
+
+.duties {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.institution,
+.instruction {
+    color: #d0500a;
+}
+@media screen and (min-width: 760px){
+    .job, .study {
+        grid-template-columns: 120px 1fr;
+    }
+    .duties, .city, .program {
+        grid-column: span 2;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .job, .study {
+        grid-template-columns: 200px 1fr;
+    }
+    .duties, .city, .program {
+        grid-column: span 1;
+    }
+
+}
+
+.tags span{
+    color: #268bd2;
+    font-size: 16px;
+    border: 1px dotted #268bd2;
+    border-radius: 2px;
+    padding: 1px 3px;
+    white-space: pre;
+    margin: 3px -2px;
+    display: inline-block;
+    line-height: 15px;
+}
+
+/* certifications grid layout */
+.certifications {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
+
+    section {
+       grid-column: span 1;
+       padding: 5px;
+       box-shadow: 1px 1px 5px;
+       border-radius: 3px;
+       text-align: center;
+
+       a {
+          margin-top: 15px;
+          display: block;
+       }
+
+    }
+
+}
+
+.content {
+   img {
+      border-style: dashed;
+      border-width: 1px;
+      margin: 10px auto;
+      display: block;
+      box-shadow: 1px 1px 5px;
+      border-radius: 3px;
+      text-align: center;
+      max-width: 100%;
+   }
+
+   iframe {
+      border: 0;
+      box-shadow: 1px 1px 5px;
+      border-radius: 3px;
+      text-align: center;
+      max-width: 100%;
+      width: 600px;
+      margin: 10px auto;
+      display: block;
+   }
+
+}
+
+@media screen and (min-width :760px){
+    main {
+        margin: 60px;
+    }
+
+}
+
+/*
+ * Menu
+ */
+
+.menu{
+
+   display: none;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+
+   ul{
+       margin: 0;
+   }
+   li {
+      display: block;
+      float: none;
+      border-bottom: 1px solid $active-color;
+      background: $bg-menu-color;
+      padding-left: 5px;
+      a {
+         text-decoration: none;
+         display: block;
+         height: 30px;
+         line-height: 30px;
+         color: $fg-menu-color;
+         padding-left: 25px;
+         margin-right: -5px;
+      }
+
+      /*
+       *Sub menu
+       */
+      ul{
+         position: relative;
+         padding: 0;
+         display: none;
+         li{
+            display: block;
+            float: none;
+            min-width: 170px;
+            border-bottom: 1px solid $active-color;
+            border-radius: 3px;
+         }
+      }
+      a:hover + ul,
+      ul:hover{
+         display: block;
+      }
+
+   }
+   li:hover,
+   li:hover>a .diamond{
+       background: $hover-color;
+       border-color: $hover-color;
+   }
+   li:last-of-type .diamond{
+       border-color: $bg-menu-color;
+   }
+   .diamond{
+       height: 22px;
+       width: 22px;
+       transform: rotate(45deg) translate(6px, 0px);
+       background: $bg-menu-color;
+       display: inline-block;
+       float: right;
+       border-right: 1px solid $active-color;
+       border-top: 1px solid $active-color;
+       border-radius: 2px;
+   }
+
+   /*
+    * active menu
+    */
+   li.active,
+   li.active>a .diamond{
+       background: $active-color;
+   }
+   li:last-of-type.active>a .diamond,
+   li.active ul li.active .diamond{
+       border-color: $active-color;
+   }
+
+
+}
+
+#menuVisible{
+    display: none;
+}
+#menuVisible:checked ~ div .menu{
+    display: block;
+}
+.show-menu .indicator{
+	border-top: 3px solid $active-color;
+	border-right: 3px solid $active-color;
+	transform: rotate(45deg);
+   transition: transform 100ms linear;
+	width: 10px;
+	height: 10px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-right: 8px;
+	line-height: 11px;
+}
+#menuVisible:checked ~ div .show-menu .indicator{
+    transform: rotate(135deg);
+    transition: transform 100ms linear;
+}
+
+.show-menu {
+    text-decoration: none;
+    background: $bg-menu-color;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display:block;
+    height: 40px;
+    width: 100px;
+    padding-top: 0px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 20px;
+    color: $fg-menu-color;
+}
+@media screen and (min-width : 760px){
+
+    .landing{
+        margin-right: 0px;
+    }
+    .landing-image{
+        margin-right: -10px;
+        width: 40%;
+    }
+    nav{
+        margin-left: 50px;
+    }
+    .menu {
+       display: block;
+       li{
+           display: inline-block;
+           float: left;
+       }
+       .diamond {
+           height: 21px;
+           width: 21px;
+           transform: translate(5px, 4px) rotate(45deg);
+       }
+       ul{
+           position: absolute;
+           margin-left: -5px;
+       }
+    }
+    .show-menu {
+        display: none;
+    }
+}
+
+/*
+ * Contact form
+ */
+form {
+   .input-group
+   {
+      label {
+          display: block;
+      }
+      textarea,
+      input {
+          margin-bottom: 15px;
+          font-family: 'Courier New';
+          line-height: 20px;
+          font-size: 20px;
+      }
+   }
+   input[type="submit"]{
+       width: 150px;
+       font-size: 25px;
+       border: 1px solid $active-color;
+       color: $active-color;
+   }
+   .buttons {
+       margin-top: 30px;
+   }
+   input[type="email"],
+   input[type="text"],
+   textarea{
+       width: calc(100% - 20px);
+   }
+}
+
+/**
+ * Animations
+ */
+
+.sub-title{
+    border-right: 2px solid #0c968e;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink{
+    from,to{
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: #0c968e;
+    }
+}
+
+.typewriter-9{
+    animation: typewriter-9 1.2s steps(9) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-9{
+    from{width: 0;}
+    to{width: 5.5em;}
+}
+
+.typewriter-12{
+    animation: typewriter-12 1.5s steps(12) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-12{
+    from{width: 0;}
+    to{width: 7.2em;}
+}
+
+.typewriter-14{
+    animation: typewriter-14 1.5s steps(14) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-14{
+    from{width: 0;}
+    to{width: 8.5em;}
+}
+
+.typewriter-15{
+    animation: typewriter-15 1.5s steps(15) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-15{
+    from{width: 0;}
+    to{width: 9em;}
+}
+.typewriter-17{
+    animation: typewriter-17 1.5s steps(17) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-17{
+    from{width: 0;}
+    to{width: 10.2em;}
+}
+
+.typewriter-19{
+    animation: typewriter-19 2s steps(19) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-19{
+    from{width: 0;}
+    to{width: 11.5em;}
+}
+
+.typewriter-20{
+    animation: typewriter-20 1.5s steps(20) 200ms 1 normal both,
+    blink 1s step-end infinite;
+}
+@keyframes typewriter-20{
+    from{width: 0;}
+    to{width: 12em;}
+}
+
+/* Based on: https://codepen.io/chriscoyier/pen/bGyoz*/
+.social-links svg:hover{
+   stroke: $hover-color; 
+   stroke-dasharray: 1000;
+   stroke-dashoffset: 1000;
+   animation: dashoffset 2s linear forwards;
+}
+
+@keyframes dashoffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
