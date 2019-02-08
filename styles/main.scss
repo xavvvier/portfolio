@@ -383,67 +383,24 @@ form {
     }
 }
 
-.typewriter-9{
-    animation: typewriter-9 1.2s steps(9) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-9{
-    from{width: 0;}
-    to{width: 5.5em;}
-}
-
-.typewriter-12{
-    animation: typewriter-12 1.5s steps(12) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-12{
-    from{width: 0;}
-    to{width: 7.2em;}
+@mixin typewriter($letters){
+   .typewriter-#{$letters}{
+       animation: typewriter-#{$letters} 1.2s steps(#{$letters}) 200ms 1 normal both,
+       blink 1s step-end infinite;
+   }
+   @keyframes typewriter-#{$letters}{
+       from{width: 0;}
+       to{width: #{$letters / 1.66}em;}
+   }
 }
 
-.typewriter-14{
-    animation: typewriter-14 1.5s steps(14) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-14{
-    from{width: 0;}
-    to{width: 8.5em;}
-}
-
-.typewriter-15{
-    animation: typewriter-15 1.5s steps(15) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-15{
-    from{width: 0;}
-    to{width: 9em;}
-}
-.typewriter-17{
-    animation: typewriter-17 1.5s steps(17) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-17{
-    from{width: 0;}
-    to{width: 10.2em;}
-}
-
-.typewriter-19{
-    animation: typewriter-19 2s steps(19) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-19{
-    from{width: 0;}
-    to{width: 11.5em;}
-}
-
-.typewriter-20{
-    animation: typewriter-20 1.5s steps(20) 200ms 1 normal both,
-    blink 1s step-end infinite;
-}
-@keyframes typewriter-20{
-    from{width: 0;}
-    to{width: 12em;}
-}
+@include typewriter(9);
+@include typewriter(12);
+@include typewriter(14);
+@include typewriter(15);
+@include typewriter(17);
+@include typewriter(19);
+@include typewriter(20);
 
 /* Based on: https://codepen.io/chriscoyier/pen/bGyoz*/
 .social-links svg:hover{
