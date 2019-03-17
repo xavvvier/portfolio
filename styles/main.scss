@@ -30,9 +30,6 @@ main{
     clear: both;
 }
 
-.landing{
-    text-align: justify;
-}
 .landing-image{
     width: 60%; 
     float: right; 
@@ -299,11 +296,7 @@ ul {
 }
 @media screen and (min-width : 760px){
 
-    .landing{
-        margin-right: 0px;
-    }
     .landing-image{
-        margin-right: -10px;
         width: 40%;
     }
     nav{
