@@ -1,0 +1,14 @@
+<p class="sub-title instruction line-14 typewriter-14">## JiraLogs ##</p>
+<div class="content">
+   <p><code>JiraLogs</code> is a <a href="https://phoenixframework.org">phoenix</a> web application to run reports to calculate know how much hours a user has registered in a Jira Server. Some companies bill clients hourly and it is important to accurately calculate how much time the employees have been working on specific tasks. Since there is not an easy way in Jira to generate this kind of information, I've created this tool to make it easy the reporting.</p>
+   <p>It is possible to access the application via <a href="https://logs.codifica.co">logs.codifica.co</a></p>
+   <img src="images/jiralog-login.png" alt="jiralogs login">
+   <p>Once the user has entered the credentials, it is possible to select between multiple reports:</p>
+   <img src="images/jiralog-home.png" alt="jiralogs home">
+   <p>The report will show the Jira items where the user has logged hours, item id, description, start date and comment of the work log, the Time Spent column header shows the sum of hours per day:</p>
+   <picture>
+      <source srcset="images/jiralog-report-large.png" media="(min-width: 750px)">
+      <img src="images/jiralog-report.png" alt="jiralogs report">
+   </picture>
+   <p>The source code is available on <a href="https://github.com/xavvvier/jira-phoenix">github.com/xavvvier/jira-phoenix</a></p>
+</div>

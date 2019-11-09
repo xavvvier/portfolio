@@ -1,0 +1,97 @@
+<p class="sub-title instruction line-20 typewriter-20">## certifications ##</p>
+<div class="certifications">
+   <section>
+      <img src="images/cert-html5-js-css3.png" alt="Programming in HTML5 with Javascript and CSS3">
+      <h4>Programming in HTML5 with Javascript and CSS3</h4>
+      <div class="tags">
+         <span>Application Developer</span>
+         <span>CSS3</span>
+         <span>Data Security</span>
+         <span>Data Validation</span>
+         <span>HTML5</span>
+         <span>Javascript</span>
+         <span>Object-based Programming</span>
+         <span>Visual Studio</span>
+         <span>Web Applications</span>
+         <span>Web Developer</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/52735e36-8199-4744-bad6-f323bbea0599">View badge</a>
+   </section>
+   <section>
+      <img src="images/cert-MVC-Web-Applications.png" alt="Developing ASP.NET MVC Web Applications">
+      <h4>Developing ASP.NET MVC Web Applications</h4>
+      <div class="tags">
+         <span>ASP.NET</span>
+         <span>Application Architecture</span>
+         <span>Application Debugging</span>
+         <span>Application Developer</span>
+         <span>Application Troubleshooting</span>
+         <span>Azure</span>
+         <span>Security Solutins</span>
+         <span>User Experience Design</span>
+         <span>Visual Studio</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/3d20dc08-2fb1-4816-945a-8723f21e2006/public_url">View badge</a>
+   </section>
+   <section>
+      <img src="images/cert-MCSA-Web-Applications.png" alt="MCSA: Web Applications">
+      <h4>MCSA: Web Applications</h4>
+      <div class="tags">
+         <span>.NET Developer</span>
+         <span>ASP.NET MVC</span>
+         <span>App Development</span>
+         <span>Applicaiton Developer</span>
+         <span>C# Programming</span>
+         <span>CSS3</span>
+         <span>Framework 4.5</span>
+         <span>HTML5</span>
+         <span>Javascript</span>
+         <span>MCSA</span>
+         <span>Visual Studio</span>
+         <span>Web Administrator</span>
+         <span>Web Applications</span>
+         <span>Web Developer</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/a4cfbe22-2017-4439-a6be-983aa8e4ba38">View badge</a>
+   </section>
+   <section>
+      <img src="images/cert-Transact-SQL.png" alt="Querying Data with Transact-SQL">
+      <h4>Querying Data with Transact-SQL</h4>
+      <div class="tags">
+         <span>Database Administration</span>
+         <span>Database Development</span>
+         <span>Database Query</span>
+         <span>SQL</span>
+         <span>SQL Server</span>
+         <span>Transact-SQL</span>
+         <span>Writing Queries</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/765897a3-9e1b-4def-b821-637ea7f88435">View badge</a>
+   </section>
+   <section>
+      <img src="images/cert-SQL-Databases.png" alt="Developing SQL Databases">
+      <h4>Developing SQL Databases</h4>
+      <div class="tags">
+         <span>Database Developer</span>
+         <span>Database Development</span>
+         <span>SQL Database</span>
+         <span>SQL Server</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/86fad06e-4af9-4914-b689-6a6ede6ef738/linked_in_profile">View badge</a>
+   </section>
+   <section>
+      <img src="images/cert-Database-Development.png" alt="SQL 2016 Database Development">
+      <h4>SQL 2016 Database Development - Certified 2018</h4>
+      <div class="tags">
+         <span>Database Developer</span>
+         <span>Database Development</span>
+         <span>MCSA</span>
+         <span>SQL</span>
+         <span>SQL Database</span>
+         <span>SQL Server</span>
+         <span>SQL Server Configuration</span>
+         <span>Transact-SQL</span>
+      </div>
+      <a href="https://www.youracclaim.com/badges/0f1347a9-a951-418c-8b6b-a307edef8bdb/linked_in_profile">View badge</a>
+   </section>
+</div>
