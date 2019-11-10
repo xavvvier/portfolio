@@ -1,0 +1,54 @@
+<nav>
+   <form action="#" method="post" autocomplete="off">
+      <input type="checkbox" id="menuVisible" role="button">
+      <div>
+         <label class="show-menu" for="menuVisible">
+            <span class="indicator">&nbsp;</span>Menu 
+         </label>
+         <ul class="menu">
+            <li class="<%= active_class(@conn, "/") %>">
+               <a href="/">
+                  Home<span class="diamond">&nbsp;</span>
+               </a>
+            </li>
+            <li class="<%= active_class(@conn, "/resume") %>">
+               <a href="/resume">
+                  Resume<span class="diamond">&nbsp;</span>
+               </a>
+            </li>
+            <li class="<%= active_class(@conn, "/certifications") %>">
+               <a href="/certifications">
+                  Certifications<span class="diamond">&nbsp;</span>
+               </a>
+            </li>
+            <li class="<%= active_class(@conn, ["/sos", "/jiralogs", "/ng-pickaday"]) %>">
+               <a href="#">
+                  Projects<span class="diamond">&nbsp;</span>
+               </a>
+               <ul>
+                  <li class="<%= active_class(@conn, "/sos") %>">
+                     <a href="/sos">
+                        SOS<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+                  <li class="<%= active_class(@conn, "/jiralogs") %>">
+                     <a href="/jiralogs">
+                        JiraLogs<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+                  <li class="<%= active_class(@conn, "/ng-pickaday") %>">
+                     <a href="/ng-pickaday">
+                        ng-pickaday<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="<%= active_class(@conn, "/contact") %>">
+               <a href="/contact">
+                  Say hello<span class="diamond">&nbsp;</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </form>
+</nav>

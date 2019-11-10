@@ -8,60 +8,7 @@
       <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/main.css?v=2") %>"/>
    </head>
    <body>
-      <nav>
-         <form action="#" method="post" autocomplete="off">
-            <input type="checkbox" id="menuVisible" role="button">
-            <div>
-               <label class="show-menu" for="menuVisible">
-                  <span class="indicator">&nbsp;</span>Menu
-               </label>
-               <ul class="menu">
-                  <li class="active">
-                     <a href="/">
-                        Home<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="resume">
-                        Resume<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="certifications">
-                        Certifications<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        Projects<span class="diamond">&nbsp;</span>
-                     </a>
-                     <ul>
-                        <li>
-                           <a href="sos">
-                              SOS<span class="diamond">&nbsp;</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="jiralogs">
-                              JiraLogs<span class="diamond">&nbsp;</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="ng-pickaday">
-                              ng-pickaday<span class="diamond">&nbsp;</span>
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li>
-                     <a href="contact">
-                        Say hello<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </form>
-      </nav>
+      <%= render "menu.html", assigns %>
       <main role="main" class="landing">
          <h2>Javier Gonzalez</h2>
          <%= render @view_module, @view_template, assigns %>

@@ -2,10 +2,10 @@
 <div class="content">
    <p><code>ng-pikaday</code> is an <a href="https://angularjs.org">angularjs</a> directive for the <a href="https://github.com/Pikaday/Pikaday">pickaday</a> date picker.</p>
    <p>It keeps the angularjs model context in synch with the date picker value:</p>
-   <img src="images/pikaday-long-format.png" alt="pikaday long format">
+   <img src="/images/pikaday-long-format.png" alt="pikaday long format">
    <p>It is posible to adjust the date format used in the control:</p>
-   <img src="images/pikaday-format.png" alt="pikaday format">
+   <img src="/images/pikaday-format.png" alt="pikaday format">
    <p>When the input file is visualized in a mobile device, the html5 native date picker is used:</p>
-   <img src="images/pikaday-mobile.png" alt="pikaday mobile">
+   <img src="/images/pikaday-mobile.png" alt="pikaday mobile">
    <p>The source code is available on <a href="https://github.com/xavvvier/ng-pikaday">github.com/xavvvier/ng-pikaday</a></p>
 </div>
