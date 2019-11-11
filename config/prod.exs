@@ -11,8 +11,7 @@ use Mix.Config
 # before starting your production server.
 config :portfolio, PortfolioWeb.Endpoint,
   http: [:inet6, port: System.get_env("PORT") || 4000],
-  url: [host: "codifica.co", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  url: [host: "codifica.co", port: 80]
 
 # Do not print debug messages in production
 config :logger, level: :info
