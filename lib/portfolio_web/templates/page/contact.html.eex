@@ -1,16 +1,16 @@
-<p class="sub-title instruction line-15 typewriter-15">## Say hello ##</p>
-<%= form_for @conn, Routes.page_path(@conn, :send), fn _f -> %>
-   <div class="input-group">
+<p class="subtitle typewriter-15">## Say hello ##</p>
+<%= form_for @conn, Routes.page_path(@conn, :send), [class: "form"], fn _f -> %>
+   <div class="form__input-group">
       <input type="hidden" name="message[return_url]" value="https://codifica.co/contact.html"/>
       <input type="hidden" name="message[subject]" value="Javier's portfolio contact page"/>
-      <label for="from">Your email:</label>
-      <input type="email" name="message[from]" id="from" maxlength="50" required>
+      <label for="from" class="form__label">Your email:</label>
+      <input type="email" class="form__input" name="message[from]" id="from" maxlength="50" required>
    </div>
-   <div class="input-group">
-      <label for="body">Your message:</label>
-      <textarea name="message[body]" id="body" rows="8" cols="40" maxlength="500"></textarea>
+   <div class="form__input-group">
+      <label for="body" class="form__label">Your message:</label>
+      <textarea name="message[body]" class="form__textarea" id="body" rows="8" cols="40" maxlength="500"></textarea>
    </div>
-   <div class="buttons">
-      <input type="submit" value="Submit">
+   <div class="form__buttons">
+      <input type="submit" class="form__submit" value="Submit">
    </div>
 <% end %>

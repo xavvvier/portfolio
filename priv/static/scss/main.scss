@@ -4,6 +4,7 @@ $hover-color: #2a96d7;
 $active-color: #859900;
 $bg-menu-color: #2f3036;
 $fg-menu-color: #ffffff;
+$subtitle-color: #d0500a;
 
 body {
     margin: 0;
@@ -29,11 +30,10 @@ main{
     display: block;
     clear: both;
 }
-
-.landing-image{
-    width: 60%; 
-    float: right; 
-    shape-outside: polygon(74% 0%, 67% 9%, 72% 13%, 45% 16%, 1% 61%, 100% 98%, 100% 0%);
+@media screen and (min-width :760px){
+    main {
+        margin: 60px;
+    }
 }
 
 a{
@@ -47,74 +47,85 @@ ul {
     padding-left: 20px;
 }
 
+.landing{
+
+   &__image{
+       width: 60%; 
+       float: right; 
+       shape-outside: polygon(74% 0%, 67% 9%, 72% 13%, 45% 16%, 1% 61%, 100% 98%, 100% 0%);
+   }
+
+   &__social-links a,
+   &__social-links a:hover{
+       text-decoration: none;
+   }
+   /* Based on: https://codepen.io/chriscoyier/pen/bGyoz*/
+   &__social-links svg:hover{
+      stroke: $hover-color; 
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dashoffset 2s linear forwards;
+   }
+   @keyframes dashoffset {
+     to {
+       stroke-dashoffset: 0;
+     }
+   }
+}
+
+
+
 .alert-info {
    color: $hover-color;
    font-weight: bold;
 }
-.social-links a,
-.social-links a:hover{
-    text-decoration: none;
-}
+
 /* resume layout */
-.job, .study {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+.resume{
 
-.year {
-    color: #22988f;
-    float: left;
-}
+   &__job, &__study {
+       margin-top: 30px;
+       display: grid;
+       grid-template-columns: 1fr;
+   }
 
-.company {
-    color: #b38b21;
-}
+   &__year {
+       color: #22988f;
+       float: left;
+   }
 
+   &__company { color: #b38b21; }
+   &__city { color: #2681cd; }
 
-.city {
-    color: #2681cd;
-}
+   &__duties {
+       margin: 0;
+       padding: 0 0 0 15px;
+   }
 
-.duties {
-    margin: 0;
-    padding: 0 0 0 15px;
-}
-
-.institution,
-.instruction {
-    color: #d0500a;
+   &__institution,
+   &__instruction {
+       color: $subtitle-color;
+   }
 }
 @media screen and (min-width: 760px){
-    .job, .study {
+    .resume__job, .resume__study {
         grid-template-columns: 120px 1fr;
     }
-    .duties, .city, .program {
+    .resume__duties, .resume__city, .resume__program {
         grid-column: span 2;
     }
 
 }
 @media screen and (min-width: 1200px){
-    .job, .study {
+    .resume__job, .resume__study {
         grid-template-columns: 200px 1fr;
     }
-    .duties, .city, .program {
+    .resume__duties, .resume__city, .resume__program {
         grid-column: span 1;
     }
 
 }
 
-.tags span{
-    color: #268bd2;
-    font-size: 16px;
-    border: 1px dotted #268bd2;
-    border-radius: 2px;
-    padding: 1px 3px;
-    white-space: pre;
-    margin: 3px -2px;
-    display: inline-block;
-    line-height: 15px;
-}
 
 /* certifications grid layout */
 .certifications {
@@ -124,24 +135,38 @@ ul {
     grid-column-gap: 2em;
     grid-row-gap: 3em;
 
-    section {
-       grid-column: span 1;
-       padding: 5px;
-       box-shadow: 1px 1px 5px;
-       border-radius: 3px;
-       text-align: center;
 
-       a {
-          margin-top: 15px;
-          display: block;
-       }
 
-    }
+}
+.certification {
+   grid-column: span 1;
+   padding: 5px;
+   box-shadow: 1px 1px 5px;
+   border-radius: 3px;
+   text-align: center;
+
+   a {
+    margin-top: 15px;
+    display: block;
+   }
+
+   &__tags span{
+       color: #268bd2;
+       font-size: 16px;
+       border: 1px dotted #268bd2;
+       border-radius: 2px;
+       padding: 1px 3px;
+       white-space: pre;
+       margin: 3px -2px;
+       display: inline-block;
+       line-height: 15px;
+   }
 
 }
 
+
 .content {
-   img {
+   &__img {
       border-style: dashed;
       border-width: 1px;
       margin: 10px auto;
@@ -152,7 +177,7 @@ ul {
       max-width: 100%;
    }
 
-   iframe {
+   &__iframe {
       border: 0;
       box-shadow: 1px 1px 5px;
       border-radius: 3px;
@@ -165,12 +190,6 @@ ul {
 
 }
 
-@media screen and (min-width :760px){
-    main {
-        margin: 60px;
-    }
-
-}
 
 /*
  * Menu
@@ -298,9 +317,10 @@ ul {
     padding-left: 20px;
     color: $fg-menu-color;
 }
+
 @media screen and (min-width : 760px){
 
-    .landing-image{
+    .landing__image{
         width: 40%;
     }
     nav{
@@ -330,54 +350,48 @@ ul {
 /*
  * Contact form
  */
-form {
-   .input-group
-   {
-      label {
-          display: block;
-      }
-      textarea,
-      input {
-          margin-bottom: 15px;
-          font-family: 'Courier New';
-          line-height: 20px;
-          font-size: 20px;
-      }
+.form {
+
+   &__label {
+       display: block;
    }
-   input[type="submit"]{
+   &__textarea,
+   &__input {
+       margin-bottom: 15px;
+       font-family: 'Courier New';
+       line-height: 20px;
+       font-size: 20px;
+   }
+   &__submit{
        width: 150px;
        font-size: 25px;
        border: 1px solid $active-color;
        color: $active-color;
    }
-   .buttons {
+   &__buttons {
        margin-top: 30px;
    }
-   input[type="email"],
-   input[type="text"],
-   textarea{
+   &__input,
+   &__textarea{
        width: calc(100% - 20px);
    }
 }
 
 /**
- * Animations
+ * Typewriter Animations
  */
 
-.sub-title{
+.subtitle{
     border-right: 2px solid #0c968e;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
+    color: $subtitle-color;
 }
 
 @keyframes blink{
-    from,to{
-        border-right-color: transparent;
-    }
-    50% {
-        border-right-color: #0c968e;
-    }
+    from,to{ border-right-color: transparent; }
+    50% { border-right-color: #0c968e; }
 }
 
 @mixin typewriter($letters){
@@ -399,16 +413,3 @@ form {
 @include typewriter(19);
 @include typewriter(20);
 
-/* Based on: https://codepen.io/chriscoyier/pen/bGyoz*/
-.social-links svg:hover{
-   stroke: $hover-color; 
-   stroke-dasharray: 1000;
-   stroke-dashoffset: 1000;
-   animation: dashoffset 2s linear forwards;
-}
-
-@keyframes dashoffset {
-  to {
-    stroke-dashoffset: 0;
-  }
-}

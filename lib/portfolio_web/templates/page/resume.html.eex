@@ -1,14 +1,14 @@
-<p class="sub-title instruction line-12 typewriter-12">## resume ##</p>
+<p class="subtitle typewriter-12">## resume ##</p>
 <p>
 I am a software developer looking for opportunities to learn something new everyday. Taking ideas and turning them into functional software products is what I love the most of this profession.
 </p>
-<section>
+<section class="resume">
    <h4>Work Experience</h4>
-   <div class="job">
-      <div class="year">2016-2018</div>
-      <div class="company">Software Developer @ NSerio Inc</div>
-      <div class="city">Bogotá, Colombia</div>
-      <ul class="duties">
+   <div class="resume__job">
+      <div class="resume__year">2016-2018</div>
+      <div class="resume__company">Software Developer @ NSerio Inc</div>
+      <div class="resume__city">Bogotá, Colombia</div>
+      <ul class="resume__duties">
          <li>Built different applications using modern front-end frameworks and libraries.</li>
          <li>Analyzed and developed custom web applications for several clients.</li>
          <li>Evaluated the use of public APIs to build multiple solutions based on software constraints.</li>
@@ -16,20 +16,20 @@ I am a software developer looking for opportunities to learn something new every
          <li>Determined possible solutions to resolve database bottlenecks.</li>
       </ul>
    </div>
-   <div class="job">
-      <div class="year">2015-2016</div>
-      <div class="company">Software Developer @ Linexperts Consultoría Empresarial</div>
-      <div class="city">Bogotá, Colombia</div>
-      <ul class="duties">
+   <div class="resume__job">
+      <div class="resume__year">2015-2016</div>
+      <div class="resume__company">Software Developer @ Linexperts Consultoría Empresarial</div>
+      <div class="resume__city">Bogotá, Colombia</div>
+      <ul class="resume__duties">
          <li>Migrated a corporate shopping website from ASP to ASP.NET MVC.</li>
          <li>Integrated new virtual payment methods for credit card transactions using external web services.</li>
       </ul>
    </div>
-   <div class="job">
-      <div class="year">2014-2015</div>
-      <div class="company">Software Developer @ 4bits</div>
-      <div class="city">Bogotá, Colombia</div>
-      <ul class="duties">
+   <div class="resume__job">
+      <div class="resume__year">2014-2015</div>
+      <div class="resume__company">Software Developer @ 4bits</div>
+      <div class="resume__city">Bogotá, Colombia</div>
+      <ul class="resume__duties">
          <li>Developed responsive web applications using ASP.NET MVC, EF, MSSQL, SignalR and angular-js.</li>
          <li>Led architectural decisions in web applications that helped to complete a medium-size web application.</li>
          <li>Coordinated meetings with team members and clients to translate user requirements into achievable goals.</li>
@@ -39,17 +39,17 @@ I am a software developer looking for opportunities to learn something new every
 </section>
 <section>
    <h4>Education</h4>
-   <div class="study">
-      <div class="year">2018-2020</div>
-      <div class="institution">Nova Scotia Community College</div>
-      <div class="city">Truro, Canada</div>
-      <div class="program">IT Web Development</div>
+   <div class="resume__study">
+      <div class="resume__year">2018-2020</div>
+      <div class="resume__institution">Nova Scotia Community College</div>
+      <div class="resume__city">Truro, Canada</div>
+      <div class="resume__program">IT Web Development Diploma</div>
    </div>
-   <div class="study">
-      <div class="year">2008-2012</div>
-      <div class="institution">Fundación Universitaria San Martín</div>
-      <div class="city">Bogotá, Colombia</div>
-      <div class="program">Ingeniero de sistemas</div>
+   <div class="resume__study">
+      <div class="resume__year">2008-2012</div>
+      <div class="resume__institution">Fundación Universitaria San Martín</div>
+      <div class="resume__city">Bogotá, Colombia</div>
+      <div class="resume__program">Systems Engineer Degree</div>
    </div>
 </section>
 <div>
