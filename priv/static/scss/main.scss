@@ -47,6 +47,10 @@ ul {
     padding-left: 20px;
 }
 
+.alert-info {
+   color: $hover-color;
+   font-weight: bold;
+}
 .social-links a,
 .social-links a:hover{
     text-decoration: none;

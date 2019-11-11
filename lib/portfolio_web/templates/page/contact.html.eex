@@ -1,5 +1,5 @@
 <p class="sub-title instruction line-15 typewriter-15">## Say hello ##</p>
-<form action="https://mailer.codifica.co" method="post">
+<%= form_for @conn, Routes.page_path(@conn, :send), fn _f -> %>
    <div class="input-group">
       <input type="hidden" name="message[return_url]" value="https://codifica.co/contact.html"/>
       <input type="hidden" name="message[subject]" value="Javier's portfolio contact page"/>
@@ -13,4 +13,4 @@
    <div class="buttons">
       <input type="submit" value="Submit">
    </div>
-</form>
+<% end %>

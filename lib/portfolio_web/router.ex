@@ -23,6 +23,7 @@ defmodule PortfolioWeb.Router do
     get "/sos", PageController, :sos
     get "/contact", PageController, :contact
     get "/jiralogs", PageController, :jiralogs
+    post "/send", PageController, :send
   end
 
   # Other scopes may use custom stacks.

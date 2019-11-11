@@ -19,7 +19,7 @@ defmodule Portfolio.MixProject do
   def application do
     [
       mod: {Portfolio.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :bamboo, :bamboo_smtp]
     ]
   end
 
@@ -38,6 +38,8 @@ defmodule Portfolio.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
+      {:bamboo, "~> 1.1"},
+      {:bamboo_smtp, "~> 1.6.0"},
       {:plug_cowboy, "~> 2.0"}
     ]
   end
