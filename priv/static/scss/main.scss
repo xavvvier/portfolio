@@ -1,19 +1,19 @@
-$bg-color: #fdf5e0;
-$fg-color: #5a707a;
-$hover-color: #2a96d7;
-$active-color: #859900;
+$bg-color: #002b36;
+$fg-color: #93a1a1;
+$hover-color: #268bd2;
+$active-color: #2aa198;
 $bg-menu-color: #2f3036;
 $fg-menu-color: #ffffff;
-$subtitle-color: #d0500a;
+$subtitle-color: #268bd2;
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier new';
+    font-family: 'Source Code Pro', monospace;
     font-size: 18px;
     color: $fg-color;
     background-color: $bg-color;
-    max-width: 1280px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -30,14 +30,18 @@ main{
     display: block;
     clear: both;
 }
+h1, h2, h3, h4, h5{
+   font-family: "Courier New";
+}
 @media screen and (min-width :760px){
     main {
-        margin: 60px;
+        margin: 50px;
     }
 }
 
 a{
     text-decoration: none;
+    color: #6c71c4;
 }
 a:hover{
     text-decoration: underline;
@@ -50,9 +54,10 @@ ul {
 .landing{
 
    &__image{
-       width: 60%; 
        float: right; 
-       shape-outside: polygon(74% 0%, 67% 9%, 72% 13%, 45% 16%, 1% 61%, 100% 98%, 100% 0%);
+       opacity: 0.7;
+       width: 180px;
+       shape-outside: polygon(37.31% 0.28%, 8.2% 18.96%, 0.43% 36.88%, 15.86% 54.62%, 14.22% 96.72%, 97.62% 96.12%, 97.76% 0.06%);
    }
 
    &__social-links a,
@@ -321,7 +326,8 @@ ul {
 @media screen and (min-width : 760px){
 
     .landing__image{
-        width: 40%;
+        margin-top: -60px;
+        shape-outside: polygon(37.31% 0.28%, 8.2% 18.96%, 0.43% 36.88%, 15.86% 54.62%, 17.39% 94.99%, 98.01% 95.08%, 97.76% 0.06%);
     }
     nav{
         margin-left: 50px;
@@ -405,11 +411,11 @@ ul {
    }
 }
 
-@include typewriter(9);
-@include typewriter(12);
-@include typewriter(14);
-@include typewriter(15);
-@include typewriter(17);
-@include typewriter(19);
+@include typewriter(5);
+@include typewriter(8);
+@include typewriter(10);
+@include typewriter(11);
+@include typewriter(13);
+@include typewriter(16);
 @include typewriter(20);
 

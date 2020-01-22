@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Javier's portfolio</title>
       <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/main.css?v=2") %>"/>
+       <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Fira+Mono|Open+Sans:300|Source+Code+Pro:300&display=swap" rel="stylesheet">
    </head>
    <body>
       <%= render "menu.html", assigns %>

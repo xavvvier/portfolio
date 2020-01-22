@@ -1,4 +1,4 @@
-<p class="subtitle typewriter-17">## ng-pickaday ##</p>
+<p class="subtitle typewriter-13">#ng-pickaday#</p>
 <div class="content">
    <p><code>ng-pikaday</code> is an <a href="https://angularjs.org">angularjs</a> directive for the <a href="https://github.com/Pikaday/Pikaday">pickaday</a> date picker.</p>
    <p>It keeps the angularjs model context in synch with the date picker value:</p>

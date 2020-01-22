@@ -1,4 +1,4 @@
-<p class="subtitle typewriter-9">## sos ##</p>
+<p class="subtitle typewriter-5">#SOS#</p>
 <div class="content">
    <p><code>SOS</code> is a <a href="https://www.asp.net/mvc">ASP.NET MVC</a> application to manage the occupational health exams carried out by <a href="http://laboratoriocolcan.com/salud-ocupacional/">Laboratorio Colcan</a> to employees of several associated companies.</p>
    <p>The application allows the booking of multiple appointments for a single patient, using <a href="https://www.asp.net/signalr">SignalR</a> to notify in real time the system's users about the assignation preventing the assignation of the same appointment blocks:</p>

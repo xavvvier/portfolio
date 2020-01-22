@@ -1,4 +1,4 @@
-<p class="subtitle typewriter-15">## Say hello ##</p>
+<p class="subtitle typewriter-11">#Say hello#</p>
 <%= form_for @conn, Routes.page_path(@conn, :send), [class: "form"], fn _f -> %>
    <div class="form__input-group">
       <input type="hidden" name="message[return_url]" value="https://codifica.co/contact.html"/>

@@ -1,4 +1,4 @@
-<p class="subtitle typewriter-14">## JiraLogs ##</p>
+<p class="subtitle typewriter-10">#JiraLogs#</p>
 <div class="content">
    <p>
       <code>JiraLogs</code> is a <a href="https://phoenixframework.org">phoenix</a> web application that allows the user to run reports to calculate how much hours have been registered in a Jira Server. 
