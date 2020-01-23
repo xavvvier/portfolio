@@ -1,0 +1,10 @@
+<p class="subtitle typewriter-13">#WR download#</p>
+<div class="content">
+   <p>As part of my <a href="https://en.wikipedia.org/wiki/Spaced_repetition">Spaced repetition</a> learning with <a href="https://apps.ankiweb.net/">Anki</a>, I was spending too much time finding audio files to practice my pronunciation. That's when I decided to create this plugin.</p>
+   <p>The <code>WR download</code> Firefox plugin gives you access to English audio definitions for words in <a href="https://www.wordreference.com">https://www.wordreference.com</a>.</p>
+   <p>Look up the word, once found, click the icon on the URL bar and that's it!, the audio file will be downloaded in the selected accent (US, UK, Irish, etc.). </p>
+   <img class="content__img" src="/images/wr-download-url-icon.png" alt="wr-download-url-icon">
+   <p>Click the Firefox download icon/folder to see the file.</p>
+   <p>To install the plugin, go to: <a href="https://addons.mozilla.org/en-US/firefox/addon/wr-download">https://addons.mozilla.org/en-US/firefox/addon/wr-download</a></p>
+   <img class="content__img" src="/images/wr-download-add-ons-page.png" alt="wr-download-add-ons-page">
+</div>

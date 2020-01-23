@@ -25,6 +25,18 @@ defmodule PortfolioWeb.PageController do
     render(conn, "resume.html")
   end
 
+  def game_jam(conn, _params) do
+    render(conn, "game_jam.html")
+  end
+
+  def wr_download(conn, _params) do
+    render(conn, "wr-download.html")
+  end
+
+  def dynogang(conn, _params) do
+    render(conn, "dynogang.html")
+  end
+
   def contact(conn, _params) do
     render(conn, "contact.html")
   end

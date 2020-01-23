@@ -1,0 +1,9 @@
+<p class="subtitle typewriter-10">#Game Jam#</p>
+<div class="content">
+   The <code>2019 Game Jam</code> was an event hosted by NSCC running from April 11 to 13.
+   <p>With no previous experience and only 48 hours to complete a functional game, Mayren, Nick, Sam and I were able to deliver <code>Another Green World</code> a game with three levels.</p>
+   <img class="content__img" src="/images/another-green-world-splash.png" alt="another green world splash">
+   <p>There were prizes for the best three games. Our game was not as exceptional as the winners, but we enjoyed working as a team and had fun in the process.</p>
+   <p>If you want to give it a try, go to <a href="https://xavvvier.github.io/anotherGreenWorld/">https://xavvvier.github.io/anotherGreenWorld/</a></p>
+   <img class="content__img" src="/images/another-green-world-level1.png" alt="another green world level 1">
+</div>

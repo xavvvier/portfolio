@@ -21,11 +21,21 @@
                   Certifications<span class="diamond">&nbsp;</span>
                </a>
             </li>
-            <li class="<%= active_class(@conn, ["/sos", "/jiralogs", "/ng-pickaday"]) %>">
+            <li class="<%= active_class(@conn, ["/sos", "/jiralogs", "/ng-pickaday", "/game-jam", "/wr-download", "/dynogang"]) %>">
                <a href="#">
                   Projects<span class="diamond">&nbsp;</span>
                </a>
                <ul>
+                  <li class="<%= active_class(@conn, "/wr-download") %>">
+                     <a href="/wr-download">
+                        WR download<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+                  <li class="<%= active_class(@conn, "/game-jam") %>">
+                     <a href="/game-jam">
+                        Game Jam<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
                   <li class="<%= active_class(@conn, "/sos") %>">
                      <a href="/sos">
                         SOS<span class="diamond">&nbsp;</span>
