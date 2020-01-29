@@ -1,0 +1,18 @@
+<p class="subtitle typewriter-10">#DynoGang#</p>
+<div class="content">
+   <p><code>DynoGang</code> is a <a href="https://www.phoenixframework.org/" target="_blank">Phoenix</a> web-based multiplayer game created to learn about the following technologies:</p>
+   <ul>
+     <li><a href="https://elixir-lang.org/" target="_blank">elixir</a> functional programing language</li>
+     <li><a href="https://hexdocs.pm/phoenix/channels.html" target="_blank">Channels</a> in <a href="https://www.phoenixframework.org/" target="_blank">Phoenix framework</a></li>
+     <li><a href="https://elixir-lang.org/getting-started/mix-otp/genserver.html" target="_blank">GenServer</a>, one of the basics building blocks of <a href="https://www.erlang.org/" target="_blank">OTP</a></li>
+   </ul>
+   <p>
+      The game was inspired by the <a href="https://en.wikipedia.org/wiki/List_of_Google_Easter_eggs#Chrome" target="_blank">T-Rex Runner</a> game, including multiplayer capabilities. The user does not play with a T-Rex but with one of these guys taken from <a href="https://opengameart.org/" target="_blank">https://opengameart.org</a>:
+   </p>
+   <img class="" src="/images/ninjadude.gif" alt="ninja dude">
+   <img class="" src="/images/maskdude.gif" alt="mask dude">
+   <img class="" src="/images/pinkman.gif" alt="pink man">
+   <img class="" src="/images/virtualguy.gif" alt="virtual guy">
+   <p>Here one screen capture of 5 players having fun:</p>
+   <img class="content__img" src="/images/dynogang-1.png" alt="dyno gang scene">
+</div>

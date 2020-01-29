@@ -26,6 +26,11 @@
                   Projects<span class="diamond">&nbsp;</span>
                </a>
                <ul>
+                  <li class="<%= active_class(@conn, "/dynogang") %>">
+                     <a href="/dynogang">
+                        DynoGang<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
                   <li class="<%= active_class(@conn, "/wr-download") %>">
                      <a href="/wr-download">
                         WR download<span class="diamond">&nbsp;</span>
