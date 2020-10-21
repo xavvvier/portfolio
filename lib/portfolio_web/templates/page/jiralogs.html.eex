@@ -5,7 +5,7 @@
       Some companies bill clients hourly and it is important to accurately calculate how much time the employees have been working on specific tasks. 
       Since there is not an easy way in Jira to generate this kind of information, I created this tool to make facilitate the reporting.
    </p>
-   <p>It is possible to access the application via <a href="https://logs.codifica.co">logs.codifica.co</a></p>
+   <p>It is NO LONGER possible to access the application via <a href="https://logs.jgonzalez.ca">logs.jgonzalez.ca</a></p>
    <img class="content__img" src="/images/jiralog-login.png" alt="jiralogs login">
    <p>Once the user has entered the credentials, is possible to select different time ranges:</p>
    <img class="content__img" src="/images/jiralog-home.png" alt="jiralogs home">

@@ -1,7 +1,7 @@
 <p class="subtitle typewriter-11">#Say hello#</p>
 <%= form_for @conn, Routes.page_path(@conn, :send), [class: "form"], fn _f -> %>
    <div class="form__input-group">
-      <input type="hidden" name="message[return_url]" value="https://codifica.co/contact.html"/>
+      <input type="hidden" name="message[return_url]" value="https://jgonzalez.ca/contact.html"/>
       <input type="hidden" name="message[subject]" value="Javier's portfolio contact page"/>
       <label for="from" class="form__label">Your email:</label>
       <input type="email" class="form__input" name="message[from]" id="from" maxlength="50" required>
@@ -11,6 +11,6 @@
       <textarea name="message[body]" class="form__textarea" id="body" rows="8" cols="40" maxlength="500"></textarea>
    </div>
    <div class="form__buttons">
-      <input type="submit" class="form__submit" value="Submit">
+      <!-- <input type="submit" class="form__submit" value="Submit"> -->
    </div>
 <% end %>
