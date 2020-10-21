@@ -46,22 +46,12 @@
                         SOS<span class="diamond">&nbsp;</span>
                      </a>
                   </li>
-                  <li class="<%= active_class(@conn, "/jiralogs") %>">
-                     <a href="/jiralogs">
-                        JiraLogs<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
                   <li class="<%= active_class(@conn, "/ng-pickaday") %>">
                      <a href="/ng-pickaday">
                         ng-pickaday<span class="diamond">&nbsp;</span>
                      </a>
                   </li>
                </ul>
-            </li>
-            <li class="<%= active_class(@conn, "/contact") %>">
-               <a href="/contact">
-                  Say hello<span class="diamond">&nbsp;</span>
-               </a>
             </li>
          </ul>
       </div>
