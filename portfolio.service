@@ -1,0 +1,21 @@
+# Create link file using
+# ln -s /root/portfolio/portfolio.service /etc/systemd/system/portfolio.service 
+# Control whether service loads on boot
+# sudo systemctl enable portfolio.service
+# sudo systemctl restart portfolio.service
+
+[Unit]
+Description=Javier Gonzalez's Portfolio
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/portfolio
+ExecStart=/root/portfolio/_build/prod/rel/portfolio/bin/portfolio start
+ExecStop=/root/portfolio/_build/prod/rel/portfolio/bin/portfolio stop
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
