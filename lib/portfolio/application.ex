@@ -8,6 +8,8 @@ defmodule Portfolio.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      # Start the PubSub system
+      {Phoenix.PubSub, name: Portfolio.PubSub},
       # Start the endpoint when the application starts
       PortfolioWeb.Endpoint
       # Starts a worker by calling: Portfolio.Worker.start_link(arg)

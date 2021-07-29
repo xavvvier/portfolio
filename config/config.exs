@@ -12,7 +12,7 @@ config :portfolio, PortfolioWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ex9sZgfr2kcgn4ENeYg7bJkEOCE4qZpZJS0d/KOlGwfSGrvd7HJDcoqLOPbTe12S",
   render_errors: [view: PortfolioWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Portfolio.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: Portfolio.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,

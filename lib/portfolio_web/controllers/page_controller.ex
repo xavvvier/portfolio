@@ -40,15 +40,4 @@ defmodule PortfolioWeb.PageController do
   def contact(conn, _params) do
     render(conn, "contact.html")
   end
-
-  def send(conn, %{"message" => parameters}) do
-    #Send the mail message
-    Mailer.send("alternar64@gmail.com", 
-      "Portfolio contact page", 
-      parameters["from"],
-      parameters["body"])
-    conn
-    |> put_flash(:info, "Message sent!")
-    |> redirect(to: "/contact")
-  end
 end
