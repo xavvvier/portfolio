@@ -5,21 +5,9 @@ Software developer taking ideas and turning them into functional products.
 <section class="resume">
    <h4>Work Experience</h4>
    <div class="resume__job">
-      <div class="resume__year">2020-2021</div>
+      <div class="resume__year">Mar 2020-Jul 2021</div>
       <div class="resume__company">REDspace</div>
       <div class="resume__city">Bedford NS, Canada</div>
-      <ul class="resume__duties">
-		  <li>Implemented user stories for web applications based on given requirements.</li>
-		  <li>Maintained and improved existing Angular web applications.</li>
-		  <li>Participated in monolithic to SPA migration and refactoring process.</li>
-		  <li>Provided peer feedback on pull requests to maintain software quality following industry standards.</li>
-		  <li>Used React Native to create a proof of concept iPad application.</li>
-      </ul>
-   </div>
-   <div class="resume__job">
-      <div class="resume__year">2016-2018</div>
-      <div class="resume__company">Software Developer @ NSerio Inc</div>
-      <div class="resume__city">Bogotá, Colombia</div>
       <ul class="resume__duties">
          <li>Implemented user stories for web applications based on given requirements and UI/UX designs.</li>
          <li>Participated in monolithic to SPA migration while refactoring code base to newer development practices.</li>
@@ -28,7 +16,19 @@ Software developer taking ideas and turning them into functional products.
       </ul>
    </div>
    <div class="resume__job">
-      <div class="resume__year">2015-2016</div>
+      <div class="resume__year">Jan 2016-Aug2018</div>
+      <div class="resume__company">Software Developer @ NSerio Inc</div>
+      <div class="resume__city">Bogotá, Colombia</div>
+      <ul class="resume__duties">
+			<li>Built different applications using modern front-end frameworks and libraries, such as Angular, VueJS, C3.</li>
+         <li>Analyzed and developed custom web applications for several clients.</li>
+         <li>Evaluated the use of public APIs to build multiple solutions based on software constraints.</li>
+         <li>Examined different javascript frameworks to implement in new web sites.</li>
+         <li>Determined possible solutions to resolve database bottlenecks.</li>
+      </ul>
+   </div>
+   <div class="resume__job">
+      <div class="resume__year">Jul 2015-Jan 2016</div>
       <div class="resume__company">Software Developer @ Linexperts Consultoría Empresarial</div>
       <div class="resume__city">Bogotá, Colombia</div>
       <ul class="resume__duties">
@@ -37,7 +37,7 @@ Software developer taking ideas and turning them into functional products.
       </ul>
    </div>
    <div class="resume__job">
-      <div class="resume__year">2014-2015</div>
+      <div class="resume__year">Jun 2014-Jul 2015</div>
       <div class="resume__company">Software Developer @ 4bits</div>
       <div class="resume__city">Bogotá, Colombia</div>
       <ul class="resume__duties">
