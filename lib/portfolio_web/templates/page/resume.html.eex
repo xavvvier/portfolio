@@ -5,15 +5,26 @@ Software developer taking ideas and turning them into functional products.
 <section class="resume">
    <h4>Work Experience</h4>
    <div class="resume__job">
+      <div class="resume__year">2020-2021</div>
+      <div class="resume__company">REDspace</div>
+      <div class="resume__city">Bedford NS, Canada</div>
+      <ul class="resume__duties">
+		  <li>Implemented user stories for web applications based on given requirements.</li>
+		  <li>Maintained and improved existing Angular web applications.</li>
+		  <li>Participated in monolithic to SPA migration and refactoring process.</li>
+		  <li>Provided peer feedback on pull requests to maintain software quality following industry standards.</li>
+		  <li>Used React Native to create a proof of concept iPad application.</li>
+      </ul>
+   </div>
+   <div class="resume__job">
       <div class="resume__year">2016-2018</div>
       <div class="resume__company">Software Developer @ NSerio Inc</div>
       <div class="resume__city">Bogotá, Colombia</div>
       <ul class="resume__duties">
-         <li>Built different applications using modern front-end frameworks and libraries.</li>
-         <li>Analyzed and developed custom web applications for several clients.</li>
-         <li>Evaluated the use of public APIs to build multiple solutions based on software constraints.</li>
-         <li>Examined different javascript frameworks to implement in new web sites.</li>
-         <li>Determined possible solutions to resolve database bottlenecks.</li>
+         <li>Implemented user stories for web applications based on given requirements and UI/UX designs.</li>
+         <li>Participated in monolithic to SPA migration while refactoring code base to newer development practices.</li>
+         <li>Provided code reviews &amp; feedback on pull requests to maintain software quality following industry standards.</li>
+         <li>Used React Native to create a proof of concept iPad application using geo-referenced data.</li>
       </ul>
    </div>
    <div class="resume__job">
@@ -42,7 +53,7 @@ Software developer taking ideas and turning them into functional products.
    <div class="resume__study">
       <div class="resume__year">2018-2020</div>
       <div class="resume__institution">Nova Scotia Community College</div>
-      <div class="resume__city">Truro, Canada</div>
+      <div class="resume__city">Truro NS, Canada</div>
       <div class="resume__program">IT Web Development Diploma</div>
    </div>
    <div class="resume__study">
@@ -55,9 +66,9 @@ Software developer taking ideas and turning them into functional products.
 <div>
    <h4>Skills &amp; interests</h4>
    <ul>
-      <li>Deep knowledge in web site development.</li>
-      <li>Experience working with different programming languages like C#, Java, python, javascript, elixir.</li>
-      <li>Proficient use of client-side technologies like SCSS, Angular, VueJS.</li>
+      <li>Deep knowledge in web sites development.</li>
+      <li>Experience working with different programming languages like C#, python, javascript, elixir.</li>
+      <li>Proficient use of client-side technologies like SCSS, Angular, React.</li>
       <li>Database design, implementation and maintenance.</li>
       <li>Linux and Windows web server management.</li>
    </ul>
