@@ -31,16 +31,6 @@
                         DynoGang<span class="diamond">&nbsp;</span>
                      </a>
                   </li>
-                  <li class="<%= active_class(@conn, "/wr-download") %>">
-                     <a href="/wr-download">
-                        WR download<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
-                  <li class="<%= active_class(@conn, "/game-jam") %>">
-                     <a href="/game-jam">
-                        Game Jam<span class="diamond">&nbsp;</span>
-                     </a>
-                  </li>
                   <li class="<%= active_class(@conn, "/sos") %>">
                      <a href="/sos">
                         SOS<span class="diamond">&nbsp;</span>
@@ -49,6 +39,16 @@
                   <li class="<%= active_class(@conn, "/ng-pickaday") %>">
                      <a href="/ng-pickaday">
                         ng-pickaday<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+                  <li class="<%= active_class(@conn, "/wr-download") %>">
+                     <a href="/wr-download">
+                        WR download<span class="diamond">&nbsp;</span>
+                     </a>
+                  </li>
+                  <li class="<%= active_class(@conn, "/game-jam") %>">
+                     <a href="/game-jam">
+                        Game Jam<span class="diamond">&nbsp;</span>
                      </a>
                   </li>
                </ul>

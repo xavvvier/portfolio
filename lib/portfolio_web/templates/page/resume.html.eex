@@ -28,15 +28,6 @@ Software developer taking ideas and turning them into functional products.
       </ul>
    </div>
    <div class="resume__job">
-      <div class="resume__year">Jul 2015-Jan 2016</div>
-      <div class="resume__company">Software Developer @ Linexperts Consultoría Empresarial</div>
-      <div class="resume__city">Bogotá, Colombia</div>
-      <ul class="resume__duties">
-         <li>Migrated a corporate shopping website from ASP to ASP.NET MVC.</li>
-         <li>Integrated new virtual payment methods for credit card transactions using external web services.</li>
-      </ul>
-   </div>
-   <div class="resume__job">
       <div class="resume__year">Jun 2014-Jul 2015</div>
       <div class="resume__company">Software Developer @ 4bits</div>
       <div class="resume__city">Bogotá, Colombia</div>
