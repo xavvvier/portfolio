@@ -1,6 +1,19 @@
 <p class="subtitle typewriter-16">#Certifications#</p>
 <div class="certifications">
    <section class="certification">
+      <img src="images/aws-cloud-p.png" alt="AWS: Certified Cloud Practicioner">
+      <h4>AWS: Certified Cloud Practicioner</h4>
+      <div class="certification__tags">
+         <span>Amazon Web Services</span>
+         <span>AWS</span>
+         <span>AWS Cloud</span>
+         <span>Cloud Computing</span>
+         <span>Cloud Platform</span>
+         <span>Cloud Services</span>
+      </div>
+      <a href="https://www.credly.com/badges/59b2149f-41a6-411c-9949-800beb8f1678">View badge</a>
+   </section>
+   <section class="certification">
       <img src="images/cert-MCSA-Web-Applications.png" alt="MCSA: Web Applications">
       <h4>MCSA: Web Applications</h4>
       <div class="certification__tags">

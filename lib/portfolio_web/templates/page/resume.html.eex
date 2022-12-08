@@ -5,13 +5,28 @@ Software developer taking ideas and turning them into functional products.
 <section class="resume">
    <h4>Work Experience</h4>
    <div class="resume__job">
+      <div class="resume__year">Oct 2021-Present</div>
+      <div class="resume__company">Software Developer @ IBM</div>
+      <div class="resume__city">Halifax NS, Canada</div>
+      <ul class="resume__duties">
+         <li>Co-led the creation of Stencil, The Home Depot’s design system, to create brand-consistent, accessible and mobile-first customer experiences.</li>
+         <li>Created and maintained a series of composable, pixel-perfect react components.</li>
+         <li>Developed and maintained a collection of npm packages that build upon each other, allowing developers to easily build UI that remains consistent across customer experiences.</li>
+         <li>Assisted the design team to validate feasibility and accessibility requirements of react components.</li>
+         <li>Used and customized Tailwind CSS to be driven by the brand-defined design tokens.</li>
+         <li>Performed quality assurance testing on new and existing code base.</li>
+         <li>Integrated jest unit tests allowing faster and safer code refactors. </li>
+         <li>Worked remotely while providing support and guidance to the development and design teams when required.</li>
+      </ul>
+   </div>
+   <div class="resume__job">
       <div class="resume__year">Mar 2020-Jul 2021</div>
       <div class="resume__company">REDspace</div>
       <div class="resume__city">Bedford NS, Canada</div>
       <ul class="resume__duties">
          <li>Implemented user stories for web applications based on given requirements and UI/UX designs.</li>
-         <li>Participated in monolithic to SPA migration while refactoring code base to newer development practices.</li>
-         <li>Provided code reviews &amp; feedback on pull requests to maintain software quality following industry standards.</li>
+         <li>Assisted in the migration of a classic monolithic ASP web site to a single page application (SPA) while refactoring existing code base to meet newer development practices.</li>
+         <li>Provided code reviews &amp; feedback on pull requests to maintain software quality following industry standards using Git as a version control system.</li>
          <li>Used React Native to create a proof of concept iPad application using geo-referenced data.</li>
       </ul>
    </div>
@@ -20,11 +35,11 @@ Software developer taking ideas and turning them into functional products.
       <div class="resume__company">Software Developer @ NSerio Inc</div>
       <div class="resume__city">Bogotá, Colombia</div>
       <ul class="resume__duties">
-			<li>Built different applications using modern front-end frameworks and libraries, such as Angular, VueJS, C3.</li>
-         <li>Analyzed and developed custom web applications for several clients.</li>
-         <li>Evaluated the use of public APIs to build multiple solutions based on software constraints.</li>
+			<li>Built different applications using modern front-end frameworks and libraries like react, angular-js, Angular, C3.</li>
+         <li>Analyzed and developed custom web applications for several clients using .Net Framework on the server side.</li>
+         <li>Evaluated the use of public REST APIs to build multiple solutions based on software constraints.</li>
          <li>Examined different javascript frameworks to implement in new web sites.</li>
-         <li>Determined possible solutions to resolve database bottlenecks.</li>
+         <li>Determined possible solutions to resolve database bottlenecks in MSSQL using store-procedures and sql functions.</li>
       </ul>
    </div>
    <div class="resume__job">
@@ -59,7 +74,7 @@ Software developer taking ideas and turning them into functional products.
    <ul>
       <li>Deep knowledge in web sites development.</li>
       <li>Experience working with different programming languages like C#, python, javascript, elixir.</li>
-      <li>Proficient use of client-side technologies like SCSS, Angular, React.</li>
+      <li>Proficient use of client-side technologies like React, SCSS, Angular.</li>
       <li>Database design, implementation and maintenance.</li>
       <li>Linux and Windows web server management.</li>
    </ul>
