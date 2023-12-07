@@ -1,0 +1,28 @@
+<p class="subtitle typewriter-16">#Certifications#</p>
+<div class="certifications">
+   <section :for={cert <- @certs} class="certification">
+      <img src={cert["image"]} alt={cert["image_alt"]} />
+      <h4><%= cert["title"]  %></h4>
+      <div class="certification__tags">
+         <span :for={tag <- cert["tags"]}><%= tag %></span>
+      </div>
+      <a href={cert["badge_link"]}>View badge</a>
+   </section>
+</div>
+<script charset="utf-8">
+   function onScrollStopped(domElement, callback, timeout = 250) {
+     domElement.addEventListener('scroll', () => {
+      clearTimeout(callback.timeout);
+       callback.timeout = setTimeout(callback, timeout);
+       document.querySelectorAll('.certification a').forEach(function(e){
+         e.className = " wobble";
+       });
+     });
+   }
+
+   onScrollStopped(window, () => {
+       document.querySelectorAll('.certification a').forEach(function(e){
+         e.className = "";
+       });
+   });
+</script>

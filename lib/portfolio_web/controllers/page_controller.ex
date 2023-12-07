@@ -6,7 +6,10 @@ defmodule PortfolioWeb.PageController do
   end
 
   def certifications(conn, _params) do
-    render(conn, "certifications.html")
+    certs = "./lib/portfolio_web/data/certifications.json"
+    |> File.read!()
+    |> Jason.decode!
+    render(conn, "certifications.html", certs: certs)
   end
 
   def jiralogs(conn, _params) do
