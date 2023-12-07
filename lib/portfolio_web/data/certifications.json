@@ -1,0 +1,130 @@
+[
+  {
+    "title": "AWS: Certified Developer",
+    "tags": [
+      "Amazon Web Services",
+      "AWS",
+      "AWS Cloud",
+      "Cloud Computing",
+      "Code Deployment",
+      "Code Development"
+    ],
+    "badge_link": "https://www.credly.com/badges/05fc49cf-11aa-47cb-a389-b50974a1216e",
+    "image": "images/aws-cloud-d.png",
+    "image_alt": "AWS: Certified Developer badge"
+  },
+  {
+    "title": "AWS: Certified Cloud Practitioner",
+    "tags": [
+      "Amazon Web Services",
+      "AWS",
+      "AWS Cloud",
+      "Cloud Computing",
+      "Cloud Platform",
+      "Cloud Services"
+    ],
+    "badge_link": "https://www.credly.com/badges/59b2149f-41a6-411c-9949-800beb8f1678",
+    "image": "images/aws-cloud-p.png",
+    "image_alt": "AWS: Certified Cloud Practitioner"
+  },
+  {
+    "title": "MCSA: Web Applications",
+    "tags": [
+      ".NET Developer",
+      "ASP.NET MVC",
+      "App Development",
+      "Application Developer",
+      "C# Programming",
+      "CSS3",
+      "Framework 4.5",
+      "HTML5",
+      "Javascript",
+      "MCSA",
+      "Visual Studio",
+      "Web Administrator",
+      "Web Applications",
+      "Web Developer"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/a4cfbe22-2017-4439-a6be-983aa8e4ba38",
+    "image": "images/cert-MCSA-Web-Applications.png",
+    "image_alt": "MCSA: Web Applications"
+  },
+  {
+    "title": "Programming in HTML5 with Javascript and CSS3",
+    "tags": [
+      "Application Developer",
+      "CSS3",
+      "Data Security",
+      "Data Validation",
+      "HTML5",
+      "Javascript",
+      "Object-based Programming",
+      "Visual Studio",
+      "Web Applications",
+      "Web Developer"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/52735e36-8199-4744-bad6-f323bbea0599",
+    "image": "images/cert-html5-js-css3.png",
+    "image_alt": "Programming in HTML5 with Javascript and CSS3"
+  },
+  {
+    "title": "Developing ASP.NET MVC Web Applications",
+    "tags": [
+      "ASP.NET",
+      "Application Architecture",
+      "Application Debugging",
+      "Application Developer",
+      "Application Troubleshooting",
+      "Azure",
+      "Security Solutions",
+      "User Experience Design",
+      "Visual Studio"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/3d20dc08-2fb1-4816-945a-8723f21e2006/public_url",
+    "image": "images/cert-MVC-Web-Applications.png",
+    "image_alt": "Developing ASP.NET MVC Web Applications"
+  },
+  {
+    "title": "SQL 2016 Database Development - Certified 2018",
+    "tags": [
+      "Database Developer",
+      "Database Development",
+      "MCSA",
+      "SQL",
+      "SQL Database",
+      "SQL Server",
+      "SQL Server Configuration",
+      "Transact-SQL"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/0f1347a9-a951-418c-8b6b-a307edef8bdb/linked_in_profile",
+    "image": "images/cert-Database-Development.png",
+    "image_alt": "SQL 2016 Database Development"
+  },
+  {
+    "title": "Querying Data with Transact-SQL",
+    "tags": [
+      "Database Administration",
+      "Database Development",
+      "Database Query",
+      "SQL",
+      "SQL Server",
+      "Transact-SQL",
+      "Writing Queries"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/765897a3-9e1b-4def-b821-637ea7f88435",
+    "image": "images/cert-Transact-SQL.png",
+    "image_alt": "Querying Data with Transact-SQL"
+  },
+  {
+    "title": "Developing SQL Databases",
+    "tags": [
+      "Database Developer",
+      "Database Development",
+      "SQL Database",
+      "SQL Server"
+    ],
+    "badge_link": "https://www.youracclaim.com/badges/86fad06e-4af9-4914-b689-6a6ede6ef738/linked_in_profile",
+    "image": "images/cert-SQL-Databases.png",
+    "image_alt": "Developing SQL Databases"
+  }
+]
