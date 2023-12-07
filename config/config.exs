@@ -5,13 +5,13 @@
 # is restricted to this project.
 
 # General application configuration
-use Mix.Config
+import Config
 
 # Configures the endpoint
 config :portfolio, PortfolioWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ex9sZgfr2kcgn4ENeYg7bJkEOCE4qZpZJS0d/KOlGwfSGrvd7HJDcoqLOPbTe12S",
-  render_errors: [view: PortfolioWeb.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: PortfolioWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Portfolio.PubSub
 
 # Configures Elixir's Logger
