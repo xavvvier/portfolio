@@ -4,10 +4,11 @@ defmodule Portfolio.MixProject do
   def project do
     [
       app: :portfolio,
-      version: "0.1.1",
-      elixir: "~> 1.7",
+      version: "0.1.2",
+      elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:phoenix, :gettext] ++ Mix.compilers(),
+      compilers: Mix.compilers(),
+      aliases: aliases(),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -32,12 +33,24 @@ defmodule Portfolio.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.0"},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix, "~> 1.6.0"},
+      {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:gettext, "~> 0.11"},
-      {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:phoenix_live_view, "~> 0.20.1"},
+      {:floki, ">= 0.30.0", only: :test},
+      {:gettext, "~> 0.24.0"},
+      # {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
+      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_poller, "~> 1.0"},
+      {:jason, "~> 1.2"},
+      {:plug_cowboy, "~> 2.5"}
+    ]
+  end
+
+  defp aliases do
+    [
+      setup: ["deps.get"],
+      #"assets.deploy": ["esbuild default --minify", "phx.digest"]
     ]
   end
 end
