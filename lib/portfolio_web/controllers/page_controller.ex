@@ -6,7 +6,7 @@ defmodule PortfolioWeb.PageController do
   end
 
   def certifications(conn, _params) do
-    certs = "./lib/portfolio_web/data/certifications.json"
+    certs = Application.app_dir(:portfolio, ["priv", "certifications.json"])
     |> File.read!()
     |> Jason.decode!
     render(conn, "certifications.html", certs: certs)
