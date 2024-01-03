@@ -1,7 +1,7 @@
 resource "aws_security_group" "portfolio-cluster" {
   name        = "eks-portfolio-cluster"
   description = "Cluster communication with workers"
-  vpc_id = module.vpc.vpc_id
+  vpc_id      = module.vpc.vpc_id
 
   egress {
     from_port   = 0

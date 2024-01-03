@@ -1,5 +1,5 @@
 resource "aws_iam_role" "portfolio-cluster" {
-  name = "eks-portfolio-cluster"
+  name = "eks-portfolio-cluster-role"
   assume_role_policy = jsonencode({
     "Version" = "2012-10-17",
     "Statement" = [
