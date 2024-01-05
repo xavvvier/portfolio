@@ -1,7 +1,7 @@
 resource "aws_security_group" "portfolio-cluster" {
   name        = "eks-portfolio-cluster"
   description = "Cluster communication with workers"
-  vpc_id      = module.vpc.vpc_id
+  vpc_id      = aws_vpc.main.id
 
   egress {
     from_port   = 0
@@ -15,7 +15,7 @@ resource "aws_security_group" "portfolio-cluster" {
   }
 }
 
-resource "aws_security_group_rule" "portfolio-cluster-ingres-workstation-https" {
+resource "aws_security_group_rule" "portfolio-cluster-ingress-workstation-https" {
   cidr_blocks       = [local.workstation-public-cidr]
   description       = "Allow ingress traffic from workstation CIDR"
   type              = "ingress"

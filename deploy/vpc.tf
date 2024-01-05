@@ -1,33 +1,132 @@
-module "vpc" {
-  # https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "~> 5.0"
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
 
-  name = local.name
-  cidr = local.vpc_cidr
+  # Must be enabled for EFS
+  enable_dns_support   = true
+  enable_dns_hostnames = true
 
-  azs             = local.azs
-  private_subnets = [for k, v in local.azs : cidrsubnet(local.vpc_cidr, 4, k)]
-  public_subnets  = [for k, v in local.azs : cidrsubnet(local.vpc_cidr, 8, k + 48)]
-  intra_subnets   = [for k, v in local.azs : cidrsubnet(local.vpc_cidr, 8, k + 52)]
+  tags = {
+    Name = "main"
+  }
+}
 
-  enable_nat_gateway     = true
-  single_nat_gateway     = true
-  one_nat_gateway_per_az = false
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.main.id
 
-  manage_default_network_acl    = true
-  default_network_acl_tags      = { Name = "${local.name}-default" }
-  manage_default_route_table    = true
-  default_route_table_tags      = { Name = "${local.name}-default" }
-  manage_default_security_group = true
-  default_security_group_tags   = { Name = "${local.name}-default" }
+  tags = {
+    Name = "igw"
+  }
+}
 
-  public_subnet_tags = {
-    "kubernetes.io/role/elb" = 1
+resource "aws_subnet" "private-us-east-1a" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.0.0/19"
+  availability_zone = "us-east-1a"
+
+  tags = {
+    "Name"                                      = "private-us-east-1a"
+    "kubernetes.io/role/internal-elb"           = "1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "owned"
+  }
+}
+
+resource "aws_subnet" "private-us-east-1b" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.32.0/19"
+  availability_zone = "us-east-1b"
+
+  tags = {
+    "Name"                                      = "private-us-east-1b"
+    "kubernetes.io/role/internal-elb"           = "1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "owned"
+  }
+}
+
+resource "aws_subnet" "public-us-east-1a" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.64.0/19"
+  availability_zone       = "us-east-1a"
+  map_public_ip_on_launch = true
+
+  tags = {
+    "Name"                                      = "public-us-east-1a"
+    "kubernetes.io/role/elb"                    = "1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "owned"
+  }
+}
+
+resource "aws_subnet" "public-us-east-1b" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.96.0/19"
+  availability_zone       = "us-east-1b"
+  map_public_ip_on_launch = true
+
+  tags = {
+    "Name"                                      = "public-us-east-1b"
+    "kubernetes.io/role/elb"                    = "1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "owned"
+  }
+}
+resource "aws_eip" "nat" {
+  domain = "vpc"
+
+  tags = {
+    Name = "nat"
+  }
+}
+
+resource "aws_nat_gateway" "nat" {
+  allocation_id = aws_eip.nat.id
+  subnet_id     = aws_subnet.public-us-east-1a.id
+
+  tags = {
+    Name = "nat"
   }
 
-  private_subnet_tags = {
-    "kubernetes.io/role/internal-elb" = 1
+  depends_on = [aws_internet_gateway.igw]
+}
+resource "aws_route_table" "private" {
+  vpc_id = aws_vpc.main.id
+
+  route {
+    cidr_block     = "0.0.0.0/0"
+    nat_gateway_id = aws_nat_gateway.nat.id
   }
 
+  tags = {
+    Name = "private"
+  }
+}
+
+resource "aws_route_table" "public" {
+  vpc_id = aws_vpc.main.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.igw.id
+  }
+
+  tags = {
+    Name = "public"
+  }
+}
+
+resource "aws_route_table_association" "private-us-east-1a" {
+  subnet_id      = aws_subnet.private-us-east-1a.id
+  route_table_id = aws_route_table.private.id
+}
+
+resource "aws_route_table_association" "private-us-east-1b" {
+  subnet_id      = aws_subnet.private-us-east-1b.id
+  route_table_id = aws_route_table.private.id
+}
+
+resource "aws_route_table_association" "public-us-east-1a" {
+  subnet_id      = aws_subnet.public-us-east-1a.id
+  route_table_id = aws_route_table.public.id
+}
+
+resource "aws_route_table_association" "public-us-east-1b" {
+  subnet_id      = aws_subnet.public-us-east-1b.id
+  route_table_id = aws_route_table.public.id
 }
