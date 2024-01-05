@@ -1,6 +1,7 @@
-resource "aws_eks_cluster" "portfolio-cluster" {
-  name     = "portfolio-cluster"
-  role_arn = aws_iam_role.portfolio-cluster.arn
+resource "aws_eks_cluster" "cluster" {
+  name     = var.cluster-name
+  version  = var.cluster_version
+  role_arn = aws_iam_role.cluster.arn
 
   vpc_config {
 
@@ -17,7 +18,7 @@ resource "aws_eks_cluster" "portfolio-cluster" {
   }
 
   depends_on = [
-    aws_iam_role_policy_attachment.portfolio-cluster-AmazonEKSClusterPolicy,
-    aws_iam_role_policy_attachment.portfolio-cluster-AmazonEKSServicePolicy
+    aws_iam_role_policy_attachment.cluster-AmazonEKSClusterPolicy,
+    aws_iam_role_policy_attachment.cluster-AmazonEKSServicePolicy
   ]
 }

@@ -3,5 +3,5 @@ output "workstation-public-cidr" {
 }
 
 output "cluster-name" {
-  value = aws_eks_cluster.portfolio-cluster.name
+  value = aws_eks_cluster.cluster.name
 }

@@ -1,5 +1,5 @@
-resource "aws_iam_role" "portfolio-cluster" {
-  name = "eks-portfolio-cluster-role"
+resource "aws_iam_role" "cluster" {
+  name = "eks-cluster-role"
   assume_role_policy = jsonencode({
     "Version" = "2012-10-17",
     "Statement" = [
@@ -14,20 +14,20 @@ resource "aws_iam_role" "portfolio-cluster" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "portfolio-cluster-AmazonEKSClusterPolicy" {
+resource "aws_iam_role_policy_attachment" "cluster-AmazonEKSClusterPolicy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
-  role       = aws_iam_role.portfolio-cluster.name
+  role       = aws_iam_role.cluster.name
 }
 
-resource "aws_iam_role_policy_attachment" "portfolio-cluster-AmazonEKSServicePolicy" {
+resource "aws_iam_role_policy_attachment" "cluster-AmazonEKSServicePolicy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSServicePolicy"
-  role       = aws_iam_role.portfolio-cluster.name
+  role       = aws_iam_role.cluster.name
 }
 
 # If no loadbalancer was ever created in this region, then this following role is necessary
-#resource "aws_iam_role_policy" "portfolio-cluster-service-linked-role" {
+#resource "aws_iam_role_policy" "cluster-service-linked-role" {
 #  name = "service-linked-role"
-#  role = aws_iam_role.portfolio-cluster.name
+#  role = aws_iam_role.cluster.name
 #
 #  policy = jsonencode({
 #    "Version" = "2012-10-17",
